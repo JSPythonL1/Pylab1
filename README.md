@@ -115,7 +115,7 @@ to_poprawna_nazwa_zmiennej = 7
 SyntaxError: invalid syntax
 ```
 >Python to język programowania z uwzględnieniem wielkości liter. Tak więc, Lastname i lastname to dwie różne nazwy zmiennych w Pythonie.
-Próba odniesienia do zmiennej, która nie została przypisana powoduje błąd. możesz użyć instrukcji del, aby usunąć zmienną, co oznacza, że odwołanie od nazwy do wartości zostanie usunięte, a próba użycia zmiennej spowoduje błąd. Usunięte zmienne mogą być ponownie przypisane do późniejszego stanu, tak jak zwykle.
+Próba odniesienia do zmiennej, która nie została przypisana powoduje błąd. możesz użyć instrukcji `del`, aby usunąć zmienną, co oznacza, że odwołanie od nazwy do wartości zostanie usunięte, a próba użycia zmiennej spowoduje błąd. Usunięte zmienne mogą być ponownie przypisane do późniejszego stanu, tak jak zwykle.
 ```Python
 >>> foo = "napis"
 >>> foo
@@ -126,4 +126,78 @@ NameError: name 'bar' is not defined
 >>> foo
 NameError: name 'foo' is not defined
 ```
->Zmienne foo i bar są nazywane zmiennymi metasyntaktycznymi, co oznacza, że są one używane jako nazwy zastępcze w przykładowym kodzie, aby coś zademonstrować. Spam i eggs są kanonicznymi zmiennymi metasyntaktycznymi używanymi w Pythonie. Nawiązują one do słynnego skeczu Latającego Cyrku Monty Pythona
+>Zmienne `foo` i `bar` są nazywane zmiennymi metasyntaktycznymi, co oznacza, że są one używane jako nazwy zastępcze w przykładowym kodzie, aby coś zademonstrować. `Spam` i `eggs` są kanonicznymi zmiennymi metasyntaktycznymi używanymi w Pythonie. Nawiązują one do słynnego skeczu Latającego Cyrku Monty Pythona.
+
+### Instrukcja warunkowa IF
+Możesz użyć instrukcji if, aby wykonać fragment kodu, jeśli spełniony jest określony warunek. Jeśli wyrażenie ma wartość True,
+wykonywane są pewne instrukcje. W przeciwnym razie są one pomijane. Instrukcja if wygląda następująco:
+if wyrażenie warunkowe:
+instrukcje
+Python używa wcięć (białe znaki na początku linii), aby ograniczyć bloki kodu. Inne języki, takie jak C czy Java, używają nawiasów
+klamrowych, aby to osiągnąć, ale w języku Python obowiązkowe jest wcięcie; programy nie będą działać bez niego. Jak widać, każda
+z instrukcji w bloku instrukcji if powinna być poprzedzona wcięciem.
+Przykład:
+if 10 > 5:
+print("10 jest większe od 5")
+print("koniec skryptu")
+Aby wykonać bardziej złożone warunki, instrukcje mogą być zagnieżdżone, jedna w drugiej. Oznacza to, że wewnętrzne instrukcje if
+są częścią instrukcji zewnętrznej. Jest to jeden ze sposobów sprawdzenia, czy spełnione są warunki wielokrotne.
+Przykład:
+if num > 5:
+print("Więcej niz 5")
+
+if num <= 45:
+print("Wartość z przedziału (5; 45]")
+Instrukcja else wykonuje instrukcję if i zawiera kod, który jest wywoływany, gdy instrukcja if zwraca wartość False. Podobnie jak
+w przypadku instrukcji if, kod wewnątrz bloku powinien być wcięty.
+Przykład:
+x = 4
+if x == 5:
+print("Tak")
+else:
+print("Nie")
+Instrukcje if i else można łączyć łańcuchowo, aby określić, która opcja w serii możliwości jest prawdziwa.
+Przykład:
+num = 12
+if num == 5:
+print("Numerem jest 5")
+else:
+if num == 10:
+print("Numerem jest 10")
+else:
+print("Numerem nie jest 5 ani 10")
+Instrukcja elif jest skrótem do użycia podczas łączenia instrukcji if i else. Seria instrukcji if elif może mieć końcowy blok else, który
+jest wywoływany, jeśli żadne z wyrażeń if lub elif nie jest prawdziwe.
+Przykład:
+num = 12
+if num == 5:
+print("Numerem jest 5")
+elif num == 10:
+print("Numerem jest 10")
+elif num == 15:
+print("Numerem jest 10")
+else:
+print("Numerem nie jest 5, 10 ani 15")
+Operatory logiczne
+Służą do tworzenia bardziej skomplikowanych warunków dla instrukcji, które opierają się na więcej niż jednym warunku. Operatorami
+logicznymi w Pythonie są and, or, i not.
+Operator and bierze dwa argumenty i ocenia je jako prawda wtedy i tylko wtedy, gdy oba argumenty są prawdziwe. W przeciwnym
+razie wartość ta jest fałszywa. Operator or także bierze dwa argumenty i ocenia je jako prawda wtedy, gdy co najmniej jeden z nich
+jest prawdziwy. W przeciwnym razie wartość ta jest fałszywa. Operator not bierze tylko jeden argument i neguje go.
+>Python używa słów dla swoich operatorów logicznych, podczas gdy większość innych języków używa symboli takich jak &&, || i !.
+
+Priorytet operatorów
+Jest bardzo ważną koncepcją programowania. Jest to rozszerzenie matematycznej koncepcji porządku operacji (kolejność
+wykonywania działań mnożenie dokonywane przed dodaniem itp.) W celu włączenia innych operatorów, takich jak operatorów
+logicznych.
+Poniższy kod pokazuje, że == ma wyższy priorytet niż or:
+```Python
+>>> False == False or True
+True
+>>> False == (False or True)
+False
+>>> (False == False) or True
+```
+>Kolejność operacji Pythona jest taka sama jak w przypadku normalnej matematyki: najpierw nawiasy, potem potęgowanie, potem mnożenie / dzielenie, a następnie dodawanie / odejmowanie.
+Poniższa tabela zawiera listę wszystkich operatorów Pythona, od najwyższego priorytetu do najniższego.
+
