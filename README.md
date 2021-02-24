@@ -1,4 +1,4 @@
-Język skryptowy lab1
+# Język skryptowy lab1
 
 ### Pierwszy program
 
@@ -10,9 +10,10 @@ print('Hello world!')
 Dla porównania poniżej przedstawiono program napisany w języku Java:
 ```Java
 public class HelloWorld {
-public static void main(String[] args) {
-System.out.println("Hello, World");
-}
+
+  public static void main(String[] args) {
+    System.out.println("Hello, World");
+  }
 }
 ```
 
