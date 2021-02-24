@@ -257,3 +257,114 @@ print("Koniec")
 ```
 
 ### Listy
+Listy są innym typem obiektu w Pythonie. Służą do przechowywania indeksowanej listy pozycji. Listę tworzy się za pomocą nawiasów kwadratowych z przecinkami oddzielającymi elementy. Dostęp do określonej pozycji na liście można uzyskać za pomocą jej indeksu w nawiasach kwadratowych.
+>Listy indeksujemy od 0.
+Przykład:
+```Python
+words = ["Hello", "world", "!"]
+print(words[0])
+print(words[1])
+print(words[2])
+```
+Pusta lista tworzona jest przez pustą parę nawiasów kwadratowych.
+Zazwyczaj lista będzie zawierała elementy jednego typu, ale możliwe jest również uwzględnienie kilku różnych typów. Listy można
+również zagnieżdżać w innych listach.
+Przykład:
+```Python
+number = 3
+things = ["string", 0, [1, 2, number], 4.56]
+print(things[1])
+print(things[2])
+print(things[2][2])
+```
+>Listy są często używane do reprezentowania siatek 2D, ponieważ w Pythonie brakuje wielowymiarowych tablic, które byłyby używane w innych językach.
+
+Indeksowanie wykraczające poza granice list powoduje błąd `IndexError`. Niektóre typy, takie jak łańcuchy znaków, mogą być indeksowane jak listy. Indeksowane łańcuchy zachowują się tak, jak indeksowana lista przechowująca każdy znak osobno. W przypadku innych typów, takich jak liczby całkowite, indeksowanie ich nie jest możliwe i powoduje błąd `TypeError`.
+
+###Operacje na listach
+Elementowi listy o określonym indeksie można ponownie nadać nową wartość .
+
+Przykład:
+```Python
+nums = [7, 7, 7, 7]
+nums[2] = 5
+print(nums)
+```
+Listy mogą być łączone i mnożone ze sobą tak samo łączone jak stringi.
+Przykład:
+```Python
+nums = [1, 2, 3]
+print(nums + [4, 5, 6])
+print(nums * 3)
+```
+
+Aby sprawdzić, czy dany element znajduje się na liście, można użyć operatora `in`. Zwraca `True`, jeśli element występuje raz lub więcej razy na liście, a `False`, jeśli nie występuje.
+Przykład:
+```Python
+words = ["spam", "egg"]
+print("spam" in words)
+print("sausages" in words)
+```
+Aby sprawdzić, czy dany element nie znajduje się na liście, możesz użyć operatora `not` w jeden z następujących sposobów:
+Przykład:
+```Python
+nums = [1, 2, 3]
+print(not 4 in nums)
+print(4 not in nums)
+print(not 3 in nums)
+print(3 not in nums)
+```
+### Funkcje list
+Innym sposobem modyfiakcji list jest użycie metody `append`. Spowoduje to dodanie elementu do końca istniejącej listy.
+Przykład:
+```Python
+nums = [1, 2, 3]
+nums.append(4)
+print(nums)
+```
+Aby pobrać liczbę elementów w liście można użyć funkcji `len`.
+Przykład:
+```Python
+nums = [4, 5, 6]
+print(len(nums))
+```
+>W przeciwieństwie do `append`, `len` jest normalną funkcją, a nie metodą. Oznacza to, że jest ona napisana przed listą, dla której jest wywoływana, bez użycia kropki.
+
+Metoda `insert` jest podobna do `append`, z tym wyjątkiem, że pozwala wstawić nowy element w dowolnej pozycji na liście, a nie tylko na końcu.
+Przykład:
+```Python
+words = ['Python', 'cool']
+words.insert(1, 'is')
+print(words)
+```
+Metoda `index` znajduje pierwsze wystąpienie elementu listy i zwraca jego indeks. Jeśli element nie znajduje się na liście, wywołuje on błąd `ValueError`.
+Przykład:
+```Python
+letters = ['q', 'w', 'e', 'r', 't', 'y']
+print(letters.index('r'))
+print(letters.index('a'))
+```
+Istnieje jeszcze kilka przydatnych funkcji i metod dla list.
+`max(lista)`   Zwraca pozycję listy z maksymalną wartością
+`min(lista)`   Zwraca pozycję listy z minimalną wartością
+`lista.count(obj)`   Zwraca liczbę określającą, ile razy element występuje na liście
+`lista.remove(obj)`  Usuwa obiekt z listy
+`lista.reverse()`  Odwraca obiekty na liście
+`lista.pop(i)`   Zwraca i-ty element listy i usuwa go
+`lista.extend(seq)`  Dołącza zawartość seq do listy
+`lista.sort(func)`   Sortuje obiekty z listy, użyj funkcji porównawczej func
+
+### Pętla for
+Pętla `for` iteruje po elementach np. listy w kolejności, wykonując blok instrukcji.
+Przykład:
+```Python
+words = ["hello", "world", "spam", "eggs"]
+for word in words:
+  print(word + "!")
+```
+Pętla `for` jest zwykle używana do powtarzania fragmentu kodu pewną liczbę razy. Odbywa się to przez połączenie pętli z funkcją `range`.
+Przykład:
+```Python
+for i in range(5):
+  print(i)
+```
