@@ -108,4 +108,22 @@ To jest napis!
 >W Pythonie zmienne nie mają określonych typów, więc można przypisać łańcuch znaków do zmiennej, a później przypisać liczbę całkowitą do tej samej zmiennej
 
 Obowiązują pewne ograniczenia dotyczące znaków, które mogą być używane w nazwach zmiennych Pythona. Dozwolone są tylko
-litery, cyfry i podkreślenia. Ponadto nie mogą zaczynać się od liczb. Nieprzestrzeganie tych zasad powoduje błędy
+litery, cyfry i podkreślenia. Ponadto nie mogą zaczynać się od liczb. Nieprzestrzeganie tych zasad powoduje błędy.
+```Python
+to_poprawna_nazwa_zmiennej = 7
+123abc = 7
+SyntaxError: invalid syntax
+```
+>Python to język programowania z uwzględnieniem wielkości liter. Tak więc, Lastname i lastname to dwie różne nazwy zmiennych w Pythonie.
+Próba odniesienia do zmiennej, która nie została przypisana powoduje błąd. możesz użyć instrukcji del, aby usunąć zmienną, co oznacza, że odwołanie od nazwy do wartości zostanie usunięte, a próba użycia zmiennej spowoduje błąd. Usunięte zmienne mogą być ponownie przypisane do późniejszego stanu, tak jak zwykle.
+```Python
+>>> foo = "napis"
+>>> foo
+'napis'
+>>> bar
+NameError: name 'bar' is not defined
+>>> del foo
+>>> foo
+NameError: name 'foo' is not defined
+```
+>Zmienne foo i bar są nazywane zmiennymi metasyntaktycznymi, co oznacza, że są one używane jako nazwy zastępcze w przykładowym kodzie, aby coś zademonstrować. Spam i eggs są kanonicznymi zmiennymi metasyntaktycznymi używanymi w Pythonie. Nawiązują one do słynnego skeczu Latającego Cyrku Monty Pythona
