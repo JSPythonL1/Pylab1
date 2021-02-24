@@ -201,3 +201,59 @@ False
 >Kolejność operacji Pythona jest taka sama jak w przypadku normalnej matematyki: najpierw nawiasy, potem potęgowanie, potem mnożenie / dzielenie, a następnie dodawanie / odejmowanie.
 Poniższa tabela zawiera listę wszystkich operatorów Pythona, od najwyższego priorytetu do najniższego.
 
+| Lp. | Operator | Opis                                                                 | Lp. | Operator               | Opis                                                        |
+|-----|----------|----------------------------------------------------------------------|-----|------------------------|-------------------------------------------------------------|
+| 1   |    **    |                              potęgowanie                             | 8   | <= < > >=              | mniejsze bądź równe, mniejsze, większe, większe bądź równe  |
+| 2   |   ~ + -  |               dopełnienie binarne, unarny plus i minus               | 9   | == !=                  | równe, różne                                                |
+| 3   | * / % // | mnożenie, dzielenie, reszta z dzielenia, cześć całkowita z dzielenia | 10  | += %= /= //= -= *= **= | skrótowe operatory                                          |
+| 4   |    + -   |                        dodawanie i odejmowanie                       | 11  | is, is not             | operatory tożsamości                                        |
+| 5   | << >>    | przesunięcie bitowe w lewo i w prawo                                 | 12  | in, not in             | operatory zawierania                                        |
+| 6   | &        | AND na bitach                                                        | 13  | not, or, and           | operatory logiczne                                          |
+| 7   | ^ \|     | XOR i OR na bitach                                                   |     |                        |                                                             |
+
+### Pętla while
+Instrukcja `if` jest uruchamiana jednokrotnie, jeśli jej warunek jest prawdziwy, a nigdy, jeśli oceniany jest jako fałszywy. Instrukcja `while` jest podobna, z tym wyjątkiem, że może być uruchamiana więcej niż raz. Instrukcje wewnątrz niej są wielokrotnie wykonywane, o ile warunek jest prawdziwy. Po przejściu do wartości False wykonywana jest następna sekcja kodu. Poniżej znajduje się pętla `while` zawierająca zmienną, która liczy od 1 do 5, w którym to momencie pętla kończy się.
+```Python
+i = 1
+while i <= 5:
+  print(i)
+  i = i + 1
+print("Koniec!")
+```
+Nieskończona pętla jest specjalnym rodzajem pętli while; nigdy się nie kończy. Jego stan pozostaje zawsze prawdziwy.
+Przykład:
+```Python
+while 1 == 1:
+  print("operacje w pętli")
+```
+Aby przedwcześnie zakończyć pętlę, można użyć instrukcji break. Po napotkaniu wewnątrz pętli instrukcja break powoduje natychmiastowe zakończenie pętli.
+Przykład:
+```Python
+i = 0
+while 1 == 1:
+  print(i)
+  i = i + 1
+  if i >= 5:
+    print("Przerwanie")
+    break
+print("Koniec")
+```
+Kolejną instrukcją, która może być używana w pętlach, jest
+continue. W przeciwieństwie do break, continue przeskakuje
+z powrotem na początek pętli, zamiast ją zatrzymywać.
+Przykład:
+```Python
+i = 0
+while True:
+  i = i +1
+  if i == 2:
+    print("Pomiń 2")
+    continue
+  if i == 5:
+    print("Przerwanie")
+    break
+  print(i)
+print("Koniec")
+```
+
+### Listy
