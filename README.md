@@ -69,4 +69,43 @@ ten sam efekt otrzymamy również gdy napis zostanie zamknięty w cudzysłów (�
 (np. He’s) wystarczy przed apostrofem postawić znak `\`. Wypróbuj przedstawione konstrukcje.
 > Backslash może być również użyty przy tabulatorach, przejściu do następnej linii, dowolnych znakach Unicode i różnych innych rzeczy, których nie można w rzeczywisty sposób wydrukować.
 
+Do konkatenacji służy operator `+` podczas łączenia łańcuchów znaków nie ma znaczenia czy zostały one utworzone w pojedynczym czy podwójnym cudzysłowie. Łańcuchy znaków można również pomnożyć przez liczbę całkowitą np. `”spam”*4` sprawdź jaki będzie wynik takiego działania. Przydatny może być również operator indeksowania który przedstawiono w poniższym skrypcie. Wykonaj go w środowisku Pythona i sprawdź rezultat.
+```Python
+a = "Welcome to Python's world!"
+print(a[0])
+print(a[0:7])
+```
+### Wprowadzanie danych
+Przydatną funkcją jest możliwość wprowadzania danych przez użytkownika do tego służy instrukcja `input` i ma ona postać:
+```Python
+input("stosowny komunikat").
+```
+### Konwertowanie typów
+Jest to zamiana zmiennej z jednego typu na zmienną innego typu np. `float(2)` zamieni liczbę całkowita na zmiennoprzecinkową.
+### Zmienne
+Zmienne odgrywają bardzo ważną rolę w większości języków programowania, a Python nie jest wyjątkiem. zmienna umożliwia
+zapisanie wartości przez przypisanie jej do nazwy, którą można wykorzystać do odnoszenia się do wartości później w programie. Aby
+przypisać zmienną, użyj jednego znaku równości.
+```Python
+>>> x = 7
+>>> print(x)
+7
+>>> print(x + 3)
+10
+>>> print(x)
+7
+```
+Zmienna może być ponownie przypisana tyle razy, ile chcesz, aby
+zmienić ich wartość.
+```Python
+>>> x = 123
+>>> print(x)
+123
+>>> x = "To jest napis"
+>>> print(x + "!")
+To jest napis!
+```
+>W Pythonie zmienne nie mają określonych typów, więc można przypisać łańcuch znaków do zmiennej, a później przypisać liczbę całkowitą do tej samej zmiennej
 
+Obowiązują pewne ograniczenia dotyczące znaków, które mogą być używane w nazwach zmiennych Pythona. Dozwolone są tylko
+litery, cyfry i podkreślenia. Ponadto nie mogą zaczynać się od liczb. Nieprzestrzeganie tych zasad powoduje błędy
