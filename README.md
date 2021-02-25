@@ -383,4 +383,4 @@ for i in range(5):
 :six: Korzystając ze zdobytych wiadomości napisz prosty kalkulator posiadający menu wyboru działania i wykonującego działania dla dwóch liczb.
 
 ## :exclamation: zadania 2-6 mają zostać dodane na GitHuba :exclamation:
-![Python](https://img.devrant.com/devrant/rant/r_761752_NXWNB.jpg)
+![Python](http://s8308.chomikuj.pl/ChomikImage.aspx?e=mUa0l4mGmydWbNYvLnEHDHqhQqVA_kQnXTcvl34Dr-4tTzTIj3EqhYgxuSA-6M4vaZh0yAl1MD3H8ZKQY2wrgU6CMQkqO4ysXTWb0axK79U&pv=2)
