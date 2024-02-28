@@ -383,4 +383,4 @@ for i in range(5):
 :six: Korzystając ze zdobytych wiadomości napisz prosty kalkulator posiadający menu wyboru działania i wykonującego działania dla dwóch liczb.
 
 ## :exclamation: zadania 2-6 mają zostać dodane na GitHuba :exclamation:
-![Python](http://s8308.chomikuj.pl/ChomikImage.aspx?e=mUa0l4mGmydWbNYvLnEHDHqhQqVA_kQnXTcvl34Dr-4tTzTIj3EqhYgxuSA-6M4vaZh0yAl1MD3H8ZKQY2wrgU6CMQkqO4ysXTWb0axK79U&pv=2)
+![Python]([http://s8308.chomikuj.pl/ChomikImage.aspx?e=mUa0l4mGmydWbNYvLnEHDHqhQqVA_kQnXTcvl34Dr-4tTzTIj3EqhYgxuSA-6M4vaZh0yAl1MD3H8ZKQY2wrgU6CMQkqO4ysXTWb0axK79U&pv=2](https://i.pinimg.com/474x/10/33/37/103337054b70ccf07eb3a1f0a60a836a.jpg)https://i.pinimg.com/474x/10/33/37/103337054b70ccf07eb3a1f0a60a836a.jpg)
