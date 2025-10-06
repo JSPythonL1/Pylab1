@@ -1,2 +1,2 @@
 # Zadanie 4
-# Skrypt pyta użytkownika o imię i wyświetla powitanie.
+# Korzystając z funkcji range oraz sum oblicz sumę liczb naturalnych od 8 do 80. (Skorzystaj z dokumentacji dla tych funkcji).
