@@ -372,15 +372,15 @@ for i in range(5):
 ## Zadania do wykonania
 :one: Przetestuj kilka podstawowych obliczeń (+, -, *, /). Spróbuj wykonać kilka różnych obliczeń z różnymi operatorami.
 
-:two: Napisz skrypt który zapyta użytkownika o imię a potem wyświetli powitanie używając z wykorzystaniem podanego imienia.
+:two: Napisz skrypt, który zapyta użytkownika o imię, a potem wyświetli powitanie z wykorzystaniem podanego imienia.
 
-:three: Napisz krótki skrypt (wystarczy jedna linia kodu) który obliczy sumę liczb całkowitych wprowadzonych przez użytkownika i wynik wyświetli jako liczba zmiennoprzecinkowa.
+:three: Napisz krótki skrypt (wystarczy jedna linia kodu), który obliczy sumę liczb całkowitych wprowadzonych przez użytkownika i wynik wyświetli jako liczba zmiennoprzecinkowa.
 
 :four: Korzystając z funkcji `range` oraz `sum` oblicz sumę liczb naturalnych od 8 do 80. (Skorzystaj z dokumentacji dla tych funkcji).
 
 :five: Napisz skrypt, który wylicza na podstawie zadanego argumentu (daty w postaci rrrr-mm-dd) liczbę dni od tego czasu do daty aktualnej. Skorzystaj z: https://docs.python.org/3/library/datetime.html. 
 
-:six: Korzystając ze zdobytych wiadomości napisz prosty kalkulator posiadający menu wyboru działania i wykonującego działania dla dwóch liczb.
+:six: Korzystając ze zdobytych wiadomości, napisz prosty kalkulator posiadający menu wyboru działania i wykonującego działania dla dwóch liczb.
 
 ## :exclamation: zadania 2-6 mają zostać dodane na GitHuba :exclamation:
 ![Python](https://i.pinimg.com/474x/10/33/37/103337054b70ccf07eb3a1f0a60a836a.jpg)

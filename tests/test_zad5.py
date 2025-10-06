@@ -1,12 +1,11 @@
 import subprocess
 from datetime import date, datetime
 
-
 def test_roznica_dat():
     today = date.today()
     input_date = "2000-01-01"
     proc = subprocess.run(
-        ["python", "src/zad5.py"],
+        ["python", "../src/zad5.py"],
         input=f"{input_date}\n",
         text=True,
         capture_output=True

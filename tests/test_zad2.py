@@ -2,11 +2,11 @@ import subprocess
 import pytest
 
 @pytest.mark.score(points=2)
-def test_suma_jako_float():
+def test_powitanie():
     proc = subprocess.run(
-        ["python", "src/zad3.py"],
-        input="2 3\n",
+        ["python", "../src/zad2.py"],
+        input="Ala\n",
         text=True,
         capture_output=True
     )
-    assert "5.0" in proc.stdout
+    assert "Ala" in proc.stdout
