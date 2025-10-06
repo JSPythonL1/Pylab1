@@ -374,7 +374,7 @@ for i in range(5):
 
 :two: Napisz skrypt, który zapyta użytkownika o imię, a potem wyświetli powitanie z wykorzystaniem podanego imienia.
 
-:three: Napisz krótki skrypt (wystarczy jedna linia kodu), który obliczy sumę liczb całkowitych wprowadzonych przez użytkownika (jeden input do któego podamy dwie liczby rozdzielone spacją) i wynik wyświetli jako liczba zmiennoprzecinkowa.
+:three: Napisz krótki skrypt (wystarczy jedna linia kodu), który obliczy sumę liczb całkowitych wprowadzonych przez użytkownika (jeden input do, którego podamy dwie liczby rozdzielone spacją) i wynik wyświetli jako liczba zmiennoprzecinkowa.
 
 :four: Korzystając z funkcji `range` oraz `sum` oblicz sumę liczb naturalnych od 8 do 80. (Skorzystaj z dokumentacji dla tych funkcji).
 
