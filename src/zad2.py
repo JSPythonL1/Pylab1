@@ -1,2 +1,6 @@
-# Zadanie 2
-# Skrypt pyta użytkownika o imię i wyświetla powitanie.
+def main():
+    print(input("Podaj imię"))
+
+
+if __name__ == "__main__":
+    main()
